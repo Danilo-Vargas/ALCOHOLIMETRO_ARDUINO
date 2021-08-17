@@ -1,13 +1,16 @@
+//ALCOHOLIMETRO - Aldo Danilo Vargas Esquivel
 
-// ALCOHLIMETRO
+// declaramos las variables iniciales y los pines del arduino
 
 int sensor = A0;
-int read;
+int read; // en esta variable se guarda la lectura del sensor, para evitar leerla multiples veces en una vuelta del loop.
 
+// valores establecidos como los limites de los niveles que obtiene el sensor
 int high = 400;
 int medium = 300;
 
 int buzzer = 7;
+
 int G = 11, Y = 10, R = 9; // declaramos las variables de los leds para usarlos de manera más sencilla
 int leds[] = {G,Y,R}; // los juntamos para usarlos en conjunto, declararlos en el setup() en una sóla función
 
